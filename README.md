@@ -1,4 +1,6 @@
-# Installing the C version of the server
+g++ rtsp-server-cpp.cpp -o rtsp_server_cpp `pkg-config --cflags --libs gstreamer-1.0 gstreamer-rtsp-1.0 gstreamer-rtsp-server-1.0`
+
+# Installing the C++ version of the server
 ## Install dependencies
 
 ```bash
@@ -14,6 +16,18 @@ sudo apt install libgstrtspserver-1.0-dev
 git clone https://github.com/Vince-vd/upd-rtsp-server.git
 ```
 
+## Compile the server file
+
+```bash
+g++ rtsp-server-cpp.cpp -o rtsp_server_cpp `pkg-config --cflags --libs gstreamer-1.0 gstreamer-rtsp-1.0 gstreamer-rtsp-server-1.0`
+```
+
+## Run the server with your wlan0 ip address as argument
+
+```bash
+./rtsp_server_cpp <ip-address>
+```
+# Optional: run the C version
 ## Edit the server file
 
 <aside>
