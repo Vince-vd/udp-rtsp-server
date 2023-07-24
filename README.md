@@ -1,4 +1,3 @@
-g++ rtsp-server-cpp.cpp -o rtsp_server_cpp `pkg-config --cflags --libs gstreamer-1.0 gstreamer-rtsp-1.0 gstreamer-rtsp-server-1.0`
 
 # Installing the C++ version of the server
 ## Install dependencies
