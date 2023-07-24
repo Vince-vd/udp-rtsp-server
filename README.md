@@ -14,14 +14,12 @@ sudo apt install libgstrtspserver-1.0-dev
 git clone https://github.com/Vince-vd/upd-rtsp-server.git
 ```
 
-## Create the server file
+## Edit the server file
 
 <aside>
 ‼️ You need to change the ip to the wlan0 ip of your raspberry pi!
 
 </aside>
-
-Create a file `rtsp-server.c`
 
 ## Compile the server file
 
